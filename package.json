@@ -4,6 +4,10 @@
     "description": "Run Cmder at the current file location",
     "version": "0.0.1",
     "publisher": "justinwash",
+    "repository": {
+        "type": "git",
+        "url": "http://www.github.com/trifectuh/cmderrunner"
+    },
     "engines": {
         "vscode": "^1.23.0"
     },
