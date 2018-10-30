@@ -2,7 +2,7 @@
     "name": "cmderrunner",
     "displayName": "cmderrunner",
     "description": "Run Cmder at the current file location",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "justinwash",
     "repository": {
         "type": "git",
