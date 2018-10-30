@@ -1,12 +1,13 @@
 {
     "name": "cmderrunner",
     "displayName": "cmderrunner",
+    "icon": "/src/lambda.jpg",
     "description": "Run Cmder at the current file location",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "justinwash",
     "repository": {
         "type": "git",
-        "url": "http://www.github.com/trifectuh/cmderrunner"
+        "url": "https://www.github.com/trifectuh/cmderrunner"
     },
     "engines": {
         "vscode": "^1.23.0"
