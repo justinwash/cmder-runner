@@ -8,11 +8,9 @@ Adds two commands to the palette: One to open Cmder with its working directory s
 
 ## Requirements
 
-Have VSCode.
-Have Windows.
-Have Cmder. 
-
-http://www.cmder.net
+- Have VSCode.
+- Have Windows.
+- Have Cmder - http://www.cmder.net
 
 ## Extension Settings
 
@@ -22,7 +20,7 @@ This extension contributes the following setting:
 
 ## Known Issues
 
-Only works on Windows to my knowledge.
+Currently only Windows 10 is supported.
 
 ## Release Notes
 
