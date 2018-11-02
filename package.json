@@ -1,59 +1,54 @@
 {
-    "name": "cmderrunner",
-    "displayName": "cmderrunner",
-    "icon": "lambda.png",
-    "description": "Run Cmder at the current file location",
-    "version": "0.1.0",
-    "publisher": "justinwash",
-    "repository": {
-        "type": "git",
-        "url": "https://www.github.com/trifectuh/cmderrunner"
-    },
-    "engines": {
-        "vscode": "^1.23.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.launchCmderAtFile",
-        "onCommand:extension.launchCmderAtWorkspace"
-    ],
-    "main": "./out/extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.launchCmderAtFile",
-                "title": "Launch Cmder at current file location"
-            },
-            {
-                "command": "extension.launchCmderAtWorkspace",
-                "title": "Launch Cmder at workspace folder"
-            }
-        ],
-        "configuration": {
-            "type": "object",
-            "title": "CmderRunner",
-            "properties": {
-                "cmderrunner.cmderlocation": {
-                    "type": "string",
-                    "default": "C:\\Cmder\\Cmder.exe",
-                    "description": "Path to Cmder"
-                }
-            }
-        }
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
-    }
+	"name": "cmderrunner",
+	"displayName": "cmderrunner",
+	"icon": "lambda.png",
+	"description": "Run Cmder at the current file location",
+	"version": "0.1.1",
+	"publisher": "justinwash",
+	"repository": {
+		"type": "git",
+		"url": "https://www.github.com/trifectuh/cmderrunner"
+	},
+	"engines": {
+		"vscode": "^1.23.0"
+	},
+	"categories": [ "Other" ],
+	"activationEvents": [ "onCommand:extension.launchCmderAtFile", "onCommand:extension.launchCmderAtWorkspace" ],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.launchCmderAtFile",
+				"title": "Launch Cmder at current file location"
+			},
+			{
+				"command": "extension.launchCmderAtWorkspace",
+				"title": "Launch Cmder at workspace folder"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "CmderRunner",
+			"properties": {
+				"cmderrunner.cmderlocation": {
+					"type": "string",
+					"default": "C:\\Cmder\\Cmder.exe",
+					"description": "Path to Cmder"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.21",
+		"@types/node": "^8.10.25",
+		"@types/mocha": "^2.2.42"
+	}
 }
