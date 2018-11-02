@@ -1,7 +1,7 @@
 {
     "name": "cmderrunner",
     "displayName": "cmderrunner",
-    "icon": "/src/lambda.jpg",
+    "icon": "lambda.png",
     "description": "Run Cmder at the current file location",
     "version": "0.0.3",
     "publisher": "justinwash",
@@ -16,7 +16,8 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.launchCmderAtFile"
+        "onCommand:extension.launchCmderAtFile",
+        "onCommand:extension.launchCmderAtWorkspace"
     ],
     "main": "./out/extension",
     "contributes": {

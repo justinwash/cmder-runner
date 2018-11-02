@@ -1,7 +1,7 @@
 'use strict';
 
 import * as vscode from 'vscode';
-import { workspace} from 'vscode';
+import { workspace } from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -11,10 +11,10 @@ export function activate(context: vscode.ExtensionContext) {
     const cp = require('child_process');
 
     let launchCmderAtFile = vscode.commands.registerCommand('extension.launchCmderAtFile', () => {
-        
+
         let currentFile = vscode.window.activeTextEditor.document.uri.fsPath;
         let command = `"${cmderLocation}" /START "${currentFile.substring(0, currentFile.lastIndexOf('\\'))}"`;
-        
+
         cp.exec(command, (err) => {
             if (err) {
                 let backupCommand = `"${cmderLocation}" /START "${workspaceLocation}"`;
@@ -34,6 +34,7 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     context.subscriptions.push(launchCmderAtFile);
+    context.subscriptions.push(launchCmderAtWorkspace);
 }
 
 export function deactivate() {
