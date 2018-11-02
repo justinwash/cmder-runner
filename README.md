@@ -24,7 +24,7 @@ Currently only Windows 10 is supported.
 
 ## Release Notes
 
-### 0.1.1
+### 0.1.2
 
 * Icon
 * Activation bug in workspace command fixed

@@ -1,7 +1,11 @@
 # Change Log
 All notable changes to the "cmderrunner" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 0.1.2
 
-## [Unreleased]
-- Initial release
+* Icon
+* Activation bug in workspace command fixed
+
+## 0.0.1
+
+* Initial release.
