@@ -3,7 +3,7 @@
     "displayName": "cmderrunner",
     "icon": "lambda.png",
     "description": "Run Cmder at the current file location",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "justinwash",
     "repository": {
         "type": "git",
