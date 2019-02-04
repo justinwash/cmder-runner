@@ -1,4 +1,4 @@
-# cmderrunner
+# Cmder Runner
 
 Open Cmder on the current file or workspace from the command palette.
 
